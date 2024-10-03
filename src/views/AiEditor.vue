@@ -57,6 +57,7 @@ const parse = () => {
 onMounted(() => {
   aiEditor = new AiEditor({
     element: divRef.value as Element,
+    lang: 'english',
     placeholder: "Click to Input Content...",
     content: 'AiEditor is an Open Source Rich Text Editor Designed for AI.  ',
     onMentionQuery: (query: string) => {
